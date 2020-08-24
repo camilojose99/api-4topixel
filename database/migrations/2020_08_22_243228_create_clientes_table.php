@@ -22,7 +22,7 @@ class CreateClientesTable extends Migration
             $table->string('primer_apellido', 30)->required();
             $table->string('segundo_apellido', 30)->nullable(1);
             $table->string('direccion', 125)->required();
-            $table->integer('telefono')->nullable(1);
+            $table->string('telefono', 12)->nullable(1);
             $table->string('email', 50)->required();
             $table->string('ocupacion', 100)->nullable(1);
             $table->unsignedBigInteger('departamentos_id');
